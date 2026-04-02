@@ -16,10 +16,11 @@ This OWASP NodeGoat application contains numerous critical security vulnerabilit
 |----------|-------|
 | High     | 12    |
 | Medium   | 3     |
+| Fixed    | 2     |
 
 ## Findings
 
-### VULN-001: Server-Side JavaScript Injection: `app/routes/contributions.js:32-34`
+### ~~VULN-001: Server-Side JavaScript Injection: `app/routes/contributions.js:32-34`~~ [FIXED]
 
 - **Severity:** High
 - **Confidence:** 1.0
@@ -31,7 +32,7 @@ This OWASP NodeGoat application contains numerous critical security vulnerabilit
 - **Estimated Effort:** Low
 - **Scanner Correlation:** No scanner report
 
-### VULN-002: NoSQL Injection: `app/data/allocations-dao.js:78`
+### ~~VULN-002: NoSQL Injection: `app/data/allocations-dao.js:78`~~ [FIXED]
 
 - **Severity:** High
 - **Confidence:** 1.0
@@ -214,9 +215,9 @@ Additional moderate/low severity vulnerabilities exist across 50+ dependencies. 
 ## Remediation Plan
 
 ### Priority Order
-1. VULN-001 (Server-Side JS Injection) - Critical RCE risk
+1. ~~VULN-001 (Server-Side JS Injection) - Critical RCE risk~~ [FIXED]
 2. VULN-007, VULN-008 (Plaintext passwords) - Account takeover risk
-3. VULN-002 (NoSQL Injection) - Database compromise risk
+3. ~~VULN-002 (NoSQL Injection) - Database compromise risk~~ [FIXED]
 4. VULN-004 (SSRF) - Internal network access risk
 5. VULN-003, VULN-011 (Authorization bypass) - Data access risk
 6. VULN-006 (Open redirect) - Phishing risk
